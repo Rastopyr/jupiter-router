@@ -1,6 +1,6 @@
 {
   "name": "jupiter-router",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Simple declarative router",
   "main": "src/index.js",
   "scripts": {

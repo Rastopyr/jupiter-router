@@ -5,16 +5,33 @@
 
 Simple declarative router
 
+* [Using middleware in `jupiter-router`](#middleware)
 * [API](#api)
   * [Router](#router)
     * [.handle](#handle)
     * [.sub](#sub-in-router)
   * [Route](#route)
     * [.sub](#sub-in-route)
+  * [Req](#req)
   * [Helpers](#helpers)
     * [HTTP helpers](#http-helpers)
     * [Response helpers](#http-helpers)
 
+
+## Middleware
+
+Example of using `express.js` middleware in `jupiter-router` on
+[body-parser](https://github.com/expressjs/body-parser) middleware.
+
+```javascript
+import bodyParser from 'body-parser';
+import { Router, Route, wrap } from 'jupiter-router';
+
+Router.sub(
+  Route('/', wrap(bodyParser));
+)
+
+```
 
 ## API
 
@@ -113,7 +130,16 @@ router.sub(
 createServer((req, res)=> router.handle(req, res)).listen(3000);
 ```
 
+### Req
+
+### Res
+
 ### Helpers
+
+#### Middleware helpers
+
+* `wrap(middleware)` - Wrap of middleware and redefine last argument. Return
+function
 
 #### HTTP helpers
 
