@@ -1,10 +1,11 @@
 {
   "name": "jupiter-router",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Simple declarative router",
   "main": "src/index.js",
   "scripts": {
-    "test": "_mocha"
+    "test": "_mocha",
+    "watch": "_mocha --watch"
   },
   "repository": {
     "type": "git",
