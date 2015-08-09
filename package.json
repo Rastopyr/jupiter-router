@@ -1,0 +1,27 @@
+{
+  "name": "jupiter-router",
+  "version": "0.0.1",
+  "description": "Simple declarative router",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "_mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jupiter-framework/jupiter-router.git"
+  },
+  "author": "Rastopyr <rastopyr@gmail.com> (http://rastopyr.github.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jupiter-framework/jupiter-router/issues"
+  },
+  "homepage": "https://github.com/Jupiter-framework/jupiter-router",
+  "devDependencies": {
+    "babel": "^5.8.21",
+    "chai": "^3.2.0",
+    "coveralls": "^2.11.3",
+    "isparta": "^3.0.3",
+    "mocha-lcov-reporter": "0.0.2",
+    "sinon": "^1.15.4"
+  }
+}
